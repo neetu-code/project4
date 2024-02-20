@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "roboto", sans-serif;
+}
+
+.hero-section {
+    background-image: url(images/developer.png);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-container {
+    color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 16px;
+}
+
+.lg-text {
+    font-size: 72px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.black-box {
+    background-color: black;
+    padding: 20px;
+}
+
+.black-box h2 {
+    color: white;
+    font-weight: 300;
+    font-size: 50px;
+    text-align: center;
+}
+
+.black-box h2 span {
+    font-weight: 400;
+    font-size: 96px;
+}
+
+.work {
+    display: grid;
+    gap: 20px;
+    grid-template-columns:
+        repeat(auto-fit, minmax(320px, 1fr));
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+.card {
+    width: 320px;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 4px 5px 5px rgba(1, 1, 1, 0.4);
+    transition: 0.3s ease-in;
+}
+
+.card:hover {
+    transform: scale(1.04);
+    transition: 0.3s ease-out;
+}
+
+.grid-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin-bottom: 10px;
+}
+
+.bottom-section {
+    display: flex;
+}
+
+.contact {
+    background-color: #515603;
+    color: white;
+}
+
+.about {
+    background-color: #722300;
+    color: white;
+}
+
+.contact,
+.about {
+    min-height: 300px;
+    padding: 32px;
+}
+
+.contact p,
+.about p {
+    margin-bottom: 20px;
+}
+
+.contact h2,
+.about h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 50px;
+    color: white;
+    width: 100%;
+    height: 100px;
+}
+
+
+
+@media (max-width: 500px) {
+    .bottom-section {
+        flex-direction: column;
+    }
+
+    .lg-text {
+        font-size: 52px;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+
+    .card {
+        width: 80%;
+        margin: 0;
+
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    .text-container {
+        color: white;
+        max-width: 100%;
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-left: 16px;
+    }
+
+}
